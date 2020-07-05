@@ -97,34 +97,7 @@ public class ItemDetails extends AppCompatActivity {
             Picasso.get().load(image).into(imageview);
         }
 
-        /*imageview.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                BitmapDrawable drawable = (BitmapDrawable) imageview.getDrawable();
-                Bitmap bitmap = drawable.getBitmap();
-
-                File directory = Environment.getExternalStorageDirectory();
-                File dir = new File(directory.getAbsolutePath() + "/Download/");
-                dir.mkdirs();
-
-                // Encode the file as a PNG image.
-                FileOutputStream outStream;
-                File file = new File(dir, System.currentTimeMillis() + "jpg");
-                try {
-                    outStream = new FileOutputStream(file);
-                    bitmap.compress(Bitmap.CompressFormat.JPEG, 100, outStream);
-                    Toast.makeText(getApplicationContext(), "Image save successfully"
-                            , Toast.LENGTH_SHORT).show();
-                    outStream.flush();
-                    outStream.close();
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        });*/
 
     }
 }
